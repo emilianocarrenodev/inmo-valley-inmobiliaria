@@ -1,0 +1,233 @@
+header {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+
+    .navbar {
+        padding: 19px 0px;
+        background: transparent url('../img/Rectangle 18.png') left bottom / 100% 100% no-repeat !important;
+
+        .navbar-brand {
+
+            .img-fluid {
+                width: 100%;
+                max-width: 134.62px;
+            }
+        }
+
+        .navbar-toggler {
+            width: 28px;
+            height: 18px;
+            padding: 0px;
+            border: none;
+            background: transparent url('../img/icon-menu.svg') center center / 100% 100% no-repeat;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            border-radius: 0px;
+        }
+
+        .offcanvas {
+            background-color: #000000;
+            z-index: 99999;
+
+            .offcanvas-header {
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    padding: 25px;
+                }
+
+                @include respond-to($phone-tablet) {
+                    padding: 25px;
+                }
+
+                @include respond-to($tablet-medium) {
+                    padding: 25px;
+                }
+
+                @include respond-to($medium-large) {
+                    padding: 25px;
+                }
+
+                .btn-close {
+                    width: auto;
+                    height: auto;
+                    padding: 0px;
+                    margin: auto 0px;
+                    background: transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 1;
+
+                    .lni {
+                        line-height: 20px;
+                        font-weight: 700;
+                        font-size: 20px;
+                        color: #EFEFEF;
+                    }
+                }
+            }
+
+            .offcanvas-body {
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    padding: 55px 25px 45px 25px;
+                }
+
+                @include respond-to($phone-tablet) {
+                    padding: 55px 25px 45px 25px;
+                }
+
+                @include respond-to($tablet-medium) {
+                    padding: 55px 25px 45px 25px;
+                }
+
+                @include respond-to($medium-large) {
+                    padding: 55px 25px 45px 25px;
+                }
+
+                .btn {
+                    width: 100%;
+                    margin-top: 15px;
+                    display: none;
+
+                    // Breakpoints
+                    @include respond-to($phone) {
+                        display: block;
+                    }
+
+                    @include respond-to($phone-tablet) {
+                        display: block;
+                    }
+
+                    @include respond-to($tablet-medium) {
+                        display: block;
+                    }
+
+                    @include respond-to($medium-large) {
+                        display: block;
+                    }
+                }
+
+                .navbar-nav {
+
+                    .nav-item {
+                        margin-right: 30px;
+
+                        // Breakpoints
+                        @include respond-to($phone) {
+                            margin-right: 0px;
+                            margin-bottom: 15px;
+                        }
+
+                        @include respond-to($phone-tablet) {
+                            margin-right: 0px;
+                            margin-bottom: 15px;
+                        }
+
+                        @include respond-to($tablet-medium) {
+                            margin-right: 0px;
+                            margin-bottom: 15px;
+                        }
+
+                        @include respond-to($medium-large) {
+                            margin-right: 0px;
+                            margin-bottom: 15px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+
+                        .nav-link {
+                            padding: 0px;
+                            line-height: 26px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            color: #000000;
+
+                            // Breakpoints
+                            @include respond-to($phone) {
+                                line-height: 30px;
+                                font-size: 24px;
+                                color: #EFEFEF;
+                            }
+
+                            @include respond-to($phone-tablet) {
+                                line-height: 30px;
+                                font-size: 24px;
+                                color: #EFEFEF;
+                            }
+
+                            @include respond-to($tablet-medium) {
+                                line-height: 30px;
+                                font-size: 24px;
+                                color: #EFEFEF;
+                            }
+
+                            @include respond-to($medium-large) {
+                                line-height: 30px;
+                                font-size: 24px;
+                                color: #EFEFEF;
+                            }
+
+                            &:hover {
+                                color: $color-secondary;
+                            }
+                        }
+                    }
+
+                    &.type-movile {
+                        display: none;
+
+                        // Breakpoints
+                        @include respond-to($phone) {
+                            display: block;
+                        }
+
+                        @include respond-to($phone-tablet) {
+                            display: block;
+                        }
+
+                        @include respond-to($tablet-medium) {
+                            display: block;
+                        }
+
+                        @include respond-to($medium-large) {
+                            display: block;
+                        }
+
+                        .nav-item {
+    
+                            .nav-link {
+                                font-family: 'SuzukiPRORegular';
+                                line-height: 22px;
+                                font-weight: 400;
+                                font-size: 18px;
+                                color: #CECECE;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-press {
+        display: none;
+    }
+
+    &.header-press {
+
+        .navbar {
+            display: none;
+        }
+
+        .navbar-press {
+            display: block;
+        }
+    }
+}

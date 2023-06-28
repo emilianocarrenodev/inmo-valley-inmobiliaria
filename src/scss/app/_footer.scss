@@ -1,0 +1,75 @@
+footer {
+    padding: 50px 0px 40px 0px;
+
+    h4 {
+        margin-bottom: 13px;
+        padding: 1px 25px;
+        border-bottom: 1px solid $color-secondary;
+        text-transform: uppercase;
+        font-family: 'SuzukiPROBold';
+        line-height: 25px;
+        font-weight: 400;
+        font-size: 20px;
+        color: $color-secondary;
+    }
+
+    .img-fluid {
+        height: 59px;
+        margin-top: 40px;
+    }
+
+    .text-copy {
+        margin: 0px;
+        line-height: 13px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #231F20;
+    }
+
+    ul {
+        margin-bottom: 30px;
+        padding-left: 25px;
+        list-style: none;
+
+        li {
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            a {
+                line-height: 13px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #231F20 !important;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+
+        &.container-social {
+            padding: 5px 25px 0px 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                margin-bottom: 0px;
+
+                a {
+
+                    .lni {
+                        line-height: 18px;
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
