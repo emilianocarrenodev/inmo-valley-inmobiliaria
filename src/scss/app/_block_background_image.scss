@@ -1,0 +1,29 @@
+.block-background-image {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: transparent;
+    background-position: center center;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        height: 250px;
+        background-attachment: inherit;
+    }
+
+    @include respond-to($phone-tablet) {
+        height: 250px;
+        background-attachment: inherit;
+    }
+
+    @include respond-to($tablet-medium) {
+        height: 350px;
+        background-attachment: inherit;
+    }
+
+    @include respond-to($medium-large) {
+        height: 350px;
+        background-attachment: inherit;
+    }
+}

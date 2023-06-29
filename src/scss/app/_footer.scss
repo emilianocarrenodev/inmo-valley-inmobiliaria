@@ -1,74 +1,36 @@
 footer {
-    padding: 50px 0px 40px 0px;
 
-    h4 {
-        margin-bottom: 13px;
-        padding: 1px 25px;
-        border-bottom: 1px solid $color-secondary;
-        text-transform: uppercase;
-        font-family: 'SuzukiPROBold';
-        line-height: 25px;
-        font-weight: 400;
-        font-size: 20px;
-        color: $color-secondary;
+    .container-main {
+
     }
 
-    .img-fluid {
-        height: 59px;
-        margin-top: 40px;
-    }
+    .container-copy {
+        padding: 40px 0px;
+        background-color: #98850f;
 
-    .text-copy {
-        margin: 0px;
-        line-height: 13px;
-        font-weight: 400;
-        font-size: 12px;
-        color: #231F20;
-    }
+        nav {
 
-    ul {
-        margin-bottom: 30px;
-        padding-left: 25px;
-        list-style: none;
+            .breadcrumb {
+                margin: 0px;
 
-        li {
-            margin-bottom: 16px;
+                .breadcrumb-item {
+                    color: #FFF;
 
-            &:last-child {
-                margin-bottom: 0px;
-            }
-
-            a {
-                line-height: 13px;
-                font-weight: 400;
-                font-size: 16px;
-                color: #231F20 !important;
-
-                &:hover {
-                    text-decoration: underline !important;
+                    a {
+                        color: #FFF;
+                    }
                 }
             }
         }
 
-        &.container-social {
-            padding: 5px 25px 0px 25px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+        p {
+            margin: 0px;
+            color: #FFF;
 
-            li {
-                margin-bottom: 0px;
-
-                a {
-
-                    .lni {
-                        line-height: 18px;
-                        font-weight: 400;
-                        font-size: 18px;
-                        color: $color-primary;
-                    }
-                }
+            a {
+                text-transform: uppercase;
+                font-weight: 800;
+                color: #FFF;
             }
         }
     }

@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "inmo-valley-inmobiliaria",
   "version": "1.0.0",
   "description": "Entorno base",
   "main": "webpack.config.js",
@@ -27,9 +27,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:emilianocarrenodev/demo.git"
+    "url": "git+ssh://git@github.com:emilianocarrenodev/inmo-valley-inmobiliaria.git"
   },
-  "homepage": "https://github.com/emilianocarrenodev/demo/src/master/#readme",
+  "homepage": "https://github.com/emilianocarrenodev/inmo-valley-inmobiliaria/blob/main/README.md",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.0",
