@@ -14944,6 +14944,24 @@ footer .container-copy p a {
   padding: 120px 0px 60px 0px;
 }
 
+.block-choose-future {
+  padding: 60px 0px;
+  background: transparent url("../img/image_banner.jpg") center center/cover no-repeat;
+}
+
+.block-properties-month {
+  padding: 100px 0px 160px 0px;
+  background: transparent url("../img/image_background.jpg") center bottom/cover no-repeat;
+}
+.block-properties-month h2, .block-properties-month .h2 {
+  margin-bottom: 60px;
+}
+.block-properties-featured {
+  padding: 100px 0px;
+}
+.block-properties-featured h2, .block-properties-featured .h2 {
+  margin-bottom: 60px;
+}
 .block-contact {
   padding: 60px 0px;
   background-color: #98850f;
