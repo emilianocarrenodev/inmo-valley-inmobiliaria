@@ -1,24 +1,286 @@
 footer {
 
     .container-main {
-        padding: 45px 0px;
+        padding: 80px 0px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            padding: 60px 0px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding: 60px 0px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding: 60px 0px;
+        }
+
+        @include respond-to($medium-large) {
+            padding: 60px 0px;
+        }
+
+        .img-fluid {
+            margin-bottom: 60px;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-bottom: 40px;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-bottom: 40px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-bottom: 40px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .btn-link {
+            margin-bottom: 10px;
+            font-weight: 300;
+            font-size: 3rem;
+            color: #FFF;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                font-size: 2rem;
+            }
+
+            @include respond-to($phone-tablet) {
+                font-size: 2rem;
+            }
+
+            @include respond-to($tablet-medium) {
+                font-size: 2rem;
+            }
+
+            @include respond-to($medium-large) {
+                font-size: 2rem;
+            }
+
+            &:hover {
+                color: #99820e;
+            }
+        }
+
+        .nav {
+
+            .nav-item {
+                
+                .nav-link {
+                    padding: 0px;
+                }
+            }
+
+            &.nav-type-one {
+                margin-top: 60px;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    margin-top: 30px;
+                    justify-content: center;
+                }
+
+                @include respond-to($phone-tablet) {
+                    margin-top: 30px;
+                    justify-content: center;
+                }
+
+                @include respond-to($tablet-medium) {
+                    margin-top: 30px;
+                    justify-content: center;
+                }
+
+                @include respond-to($medium-large) {
+                    margin-top: 30px;
+                    justify-content: center;
+                }
+
+                .nav-item {
+                
+                    .nav-link {
+                        padding: 5px 15px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: #FFF;
+
+                        &:hover {
+                            color: #99820e;
+                        }
+
+                        &.active {
+                            text-transform: uppercase;
+                            background-color: #99820e;
+                            color: #FFF;
+                        }
+                    }
+
+                    .nav-link-heart {
+                        padding: 0px 0px 0px 35px;
+                        border: none;
+                        background: transparent url('../img/icon_heart_fill.svg') left center / auto 19px no-repeat;
+                        line-height: 32px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: #FFF;
+                        -webkit-transition: all 0.5s;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            color: #99820e;
+                        }
+                    }
+                }
+            }
+
+            &.nav-type-two {
+                margin-top: 60px;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    margin-top: 40px;
+                }
+
+                @include respond-to($phone-tablet) {
+                    margin-top: 40px;
+                }
+
+                @include respond-to($tablet-medium) {
+                    margin-top: 40px;
+                }
+
+                @include respond-to($medium-large) {
+                    margin-top: 40px;
+                }
+
+                .nav-item {
+                    margin-right: 15px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                
+                    .nav-link {
+                        font-size: 18px;
+                        color: #969ba0;
+
+                        &:hover {
+                            color: #99820e;
+                        }
+                    }
+
+                    .lni {
+                        font-size: 20px;
+                        color: #FFF;
+                    }
+
+                    &.dropdown {
+
+                        .dropdown-toggle {
+                            color: #FFF;
+
+                            .dropdown-menu {
+                                background: transparent;
+                            }
+                        }
+
+                        .dropdown-menu {
+                            min-width: auto;
+                            background: transparent;
+                            padding: 0px 19px 0px 0px;
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            border-radius: 0px;
+
+                            li {
+                                margin-bottom: 5px;
+
+                                &:last-child {
+                                    margin-bottom: 0px;
+                                }
+
+                                .dropdown-item {
+                                    padding: 0px;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .container-copy {
         padding: 40px 0px;
         background-color: #98850f;
 
+        // Breakpoints
+        @include respond-to($phone) {
+            padding: 30px 0px;
+        }
+
+        @include respond-to($phone-tablet) {
+            padding: 30px 0px;
+        }
+
+        @include respond-to($tablet-medium) {
+            padding: 30px 0px;
+        }
+
+        @include respond-to($medium-large) {
+            padding: 30px 0px;
+        }
+
         nav {
 
             .breadcrumb {
                 margin: 0px;
 
+                // Breakpoints
+                @include respond-to($phone) {
+                    margin-bottom: 15px;
+                    justify-content: center;
+                }
+
+                @include respond-to($phone-tablet) {
+                    margin-bottom: 15px;
+                    justify-content: center;
+                }
+
+                @include respond-to($tablet-medium) {
+                    margin-bottom: 15px;
+                    justify-content: center;
+                }
+
+                @include respond-to($medium-large) {
+                    margin-bottom: 15px;
+                    justify-content: center;
+                }
+
                 .breadcrumb-item {
+                    font-size: 13px;
                     color: #FFF;
 
                     a {
+                        font-size: 13px;
                         color: #FFF;
+
+                        &:hover {
+                            text-decoration: underline !important;
+                        }
                     }
+                }
+
+                .breadcrumb-item + .breadcrumb-item::before {
+                    font-family: 'bootstrap-icons';
+                    color: #FFF;
                 }
             }
         }

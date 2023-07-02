@@ -96,15 +96,15 @@
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <button class="btn" type="button">Buscar</button>
+                            <button class="btn btn-search" type="button">Buscar</button>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="input-group">
-                            <button class="btn" type="button">Limpiar filtros</button>
-                            <button class="btn" type="button">Busqueda avanzada</button>
+                            <button class="btn btn-filter" type="button">Limpiar filtros</button>
+                            <button class="btn btn-advanced" type="button">Busqueda avanzada</button>
                         </div>                          
                     </div>
                 </div>
@@ -118,7 +118,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <h2>Elije tu futuro</h2>
+                    <h2 class="title-type-one">Elije tu futuro</h2>
                     <img src="assets/img/icon logo.svg" alt="Image">
                 </div>
             </div>
@@ -157,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <h2>propiedad <span>del mes</span></h2>
+                    <h2 class="title-type-one">propiedad <span>del mes</span></h2>
                 </div>
             </div>
             <div class="container-image-description">
@@ -187,7 +187,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-8">
                         <img src="assets/img/icon_2.svg" alt="Image">
-                        <h2>vende tu propiedad</h2>
+                        <h2 class="title-type-one">vende tu propiedad</h2>
                         <small>Con nosotros</small>
                         <a href="" class="btn">Quiero vender</a>
                     </div>
@@ -205,7 +205,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <h2>propiedasdes<span>Destacadas</span></h2>
+                    <h2 class="title-type-one">propiedasdes<span>Destacadas</span></h2>
                 </div>
             </div>
             <div class="row">
@@ -336,8 +336,26 @@
     <section class="block-last-news">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-
+                <div class="col-12 col-lg-4 d-flex flex-column justify-content-end align-items-start">
+                    <div class="container-main">
+                        <h2 class="title-type-one">Últimas<br/><span>Noticias</span></h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 pe-lg-4 mb-5 mb-lg-0">
+                    <a href="" target="_self">
+                        <div class="container-item" style="background-image: url('assets/img/mews_1.jpg');">
+                            <label>20 jun</label>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit? Aut illum pariatur totam voluptatibus porro laboriosam distinctio ad nihil! Ab doloribus iusto maxime natus voluptate laudantium quam dignissimos quia.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 ps-lg-4">
+                    <a href="" target="_self">
+                        <div class="container-item" style="background-image: url('assets/img/news_2.jpg');">
+                            <label>20 jun</label>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, sit? Aut illum pariatur totam voluptatibus porro laboriosam distinctio ad nihil! Ab doloribus iusto maxime natus voluptate laudantium quam dignissimos quia.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -352,8 +370,8 @@
     <section class="block-contact">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h2>contacta <span>con</span> nosotros</h2>
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="title-type-one">contacta<br/><span>con</span><br/>nosotros</h2>
                 </div>
             </div>
             <form action="" method="post">
@@ -372,23 +390,23 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <textarea class="form-control" placeholder="Mensaje"></textarea>
+                        <input type="text" class="form-control" placeholder="Mensaje">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-3 mb-5">
                     <div class="col-12">
                         <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Marque la casilla para ponerse en contacto con nosotros y acepte que sus datos se utilicen de acuerdo con nuestra política de privacidad se le añadirá automaticamente a nuestra lista de correo, pero puede revocarla en cualquier momento.</label>
+                            <input type="checkbox" class="form-check-input" id="form-contact-checkbox">
+                            <label class="form-check-label" for="form-contact-checkbox">Marque la casilla para ponerse en contacto con nosotros y acepte que sus datos se utilicen de acuerdo con nuestra política de privacidad se le añadirá automaticamente a nuestra lista de correo, pero puede revocarla en cualquier momento.</label>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-dark">Enviar</button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-12">
                         <p><b>Responsables del tratamiento:</b> InmoValley, <b>Finalidad del tratamiento:</b> Gestión y control de los servicios ofrecidos a través de la página Web de Servicios inmobiliarios, Envio de información a traves de newsletter y otros, Legitimación: Por consentimiento, Destinatarios: No se cederan los datos, salvo para</p>
                     </div>

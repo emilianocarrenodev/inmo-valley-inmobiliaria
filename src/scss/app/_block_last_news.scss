@@ -1,3 +1,149 @@
 .block-last-news {
-    
+    padding: 100px 0px;
+    background-color: #eaeaea;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 60px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 60px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 60px 0px;
+    }
+
+    @include respond-to($medium-large) {
+        padding: 60px 0px;
+    }
+
+    .container-main {
+        margin-left: -15px;
+        margin-bottom: 15px;
+        background-color: red;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        @include respond-to($medium-large) {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+
+    .container-item {
+        width: 100%;
+        min-height: 500px;
+        padding: 25px;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            min-height: 250px;
+            padding: 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            min-height: 250px;
+            padding: 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            min-height: 350px;
+            padding: 15px;
+        }
+
+        @include respond-to($medium-large) {
+            min-height: 350px;
+            padding: 15px;
+        }
+
+        &::before {
+            width: 0px;
+            height: 0px;
+            top: 0px;
+            left: 0px;
+            position: absolute;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            background-color: red;
+            content: '';
+            z-index: 0;
+            opacity: 0;
+        }
+
+        &:hover {
+
+            &::before {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+        }
+
+        label {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+            color: #FFF;
+            z-index: 1;
+        }
+
+        p {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+            color: #FFF;
+            z-index: 1;
+        }
+    }
 }

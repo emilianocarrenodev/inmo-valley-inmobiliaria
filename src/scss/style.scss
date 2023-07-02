@@ -1,6 +1,8 @@
 @import './vendor/lineicons';
 @import './vendor/variables';
 @import '~bootstrap/scss/bootstrap';
+$bootstrap-icons-font-dir: "../fonts/bootstrap-icons/";
+@import '~bootstrap-icons/font/bootstrap-icons';
 @import '~swiper/css';
 @import '~swiper/css/effect-fade';
 @import './app/global';
