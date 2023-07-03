@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <title>Inmo Valley Inmobiliaria</title>
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="any">
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" sizes="any">
     <link rel="stylesheet" type="text/css" href="./assets/css/bundle.min.css">
 </head>
 
@@ -44,8 +44,9 @@
         <div class="container-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h1>inmo<br/>valley</h1>
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+                        <h1 class="wow animate__backInUp">inmo<br/>valley<span>Siempre a tu lado</span></h1>
+                        <a href="" target="_self" class="wow animate__fadeInBottomRight"><i class="bi bi-arrow-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -58,7 +59,7 @@
         <div class="container">
             <form action="">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 wow animate__fadeInUp">
                         <div class="input-group">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Estatus</option>
@@ -90,21 +91,16 @@
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Referencia</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                            <input class="form-control" type="text" placeholder="Referencia">
                             <button class="btn btn-search" type="button">Buscar</button>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 wow animate__fadeInUp">
                         <div class="input-group">
                             <button class="btn btn-filter" type="button">Limpiar filtros</button>
-                            <button class="btn btn-advanced" type="button">Busqueda avanzada</button>
+                            <button class="btn btn-advanced" type="button">Búsqueda avanzada</button>
                         </div>                          
                     </div>
                 </div>
@@ -118,31 +114,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="title-type-one">Elije tu futuro</h2>
-                    <img src="assets/img/icon logo.svg" alt="Image">
+                    <h2 class="wow animate__backInUp">Elije tu futuro</h2>
+                    <img src="assets/img/icon logo.svg" alt="Image" class="wow animate__fadeIn">
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 pe-lg-4 wow animate__fadeInUpBig">
                     <a href="" target="_self">
                         <div class="container-item">
-                            <h3>Pisos en Elche</h3>
+                            <h3>Pisos en Elche<br/><i class="bi bi-arrow-right"></i></h3>
                             <small><span>20</span>propiedades</small>
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 px-lg-4 wow animate__fadeInUpBig">
                     <a href="" target="_self">
                         <div class="container-item">
-                            <h3>Chalets en Elche</h3>
+                            <h3>Chalets en Elche<br/><i class="bi bi-arrow-right"></i></h3>
                             <small><span>43</span>propiedades</small>
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 ps-lg-4 wow animate__fadeInUpBig">
                     <a href="" target="_self">
                         <div class="container-item">
-                            <h3>Apartamentos<br/>Santa Pola</h3>
+                            <h3>Apartamentos<br/>Santa Pola<br/><i class="bi bi-arrow-right"></i></h3>
                             <small><span>36</span>propiedades</small>
                         </div>
                     </a>
@@ -157,20 +153,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="title-type-one">propiedad <span>del mes</span></h2>
+                    <h2 class="title-type-one wow animate__backInUp">propiedad<br/><span>Del mes</span></h2>
                 </div>
             </div>
             <div class="container-image-description">
                 <div class="row">
-                    <div class="col-12 col-lg-8">
+                    <div class="col-12 col-lg-8 col-xl-9 wow animate__fadeInLeftBig pe-lg-0">
                         <div class="container-image" style="background-image: url('assets/img/property_month.jpg');">
-                            <label>obra nueva</label>
-                            <label>vistas al mar</label>
+                            <label class="badge bg-primary">obra nueva</label>
+                            <label class="badge bg-secondary">vistas al mar</label>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 col-xl-3 wow animate__fadeInRightBig ps-lg-0 d-flex flex-column justify-content-center align-items-center">
                         <div class="container-description">
-                            <label>ref: p-1204</label>
+                            <label class="badge bg-primary">ref: p-1204</label>
                             <h3>Piso</h3>
                             <small>Obra nueva</small>
                             <p>Elche - huerto de trabalón</p>
@@ -178,20 +174,19 @@
                                 <li><b>200</b> m construidos - 3habitaciones</li>
                                 <li><b>3</b> Baños - <b>piscina</b></li>
                             </ul>
-                            <p><span>275.000&euro;</span></p>
+                            <p class="mb-0"><span>275.000&euro;</span></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container-banner">
                 <div class="row">
-                    <div class="col-12 col-lg-8">
-                        <img src="assets/img/icon_2.svg" alt="Image">
-                        <h2 class="title-type-one">vende tu propiedad</h2>
-                        <small>Con nosotros</small>
-                        <a href="" class="btn">Quiero vender</a>
+                    <div class="col-12 col-lg-8 wow animate__fadeInLeftBig d-flex flex-column justify-content-start align-items-start">
+                        <img src="assets/img/icon_2.svg" alt="Image" class="img-logo">
+                        <h2 class="title-type-one">vende tu propiedad<br/><span>Con nosotros</span></h2>
+                        <a href="" class="btn btn-primary">Quiero vender</a>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4 wow animate__fadeInRightBig d-none d-lg-block">
                         <img src="assets/img/image_sell.jpg" class="img-fluid object-fit-cover w-100 h-100" alt="Image">
                     </div>
                 </div>
@@ -205,106 +200,118 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="title-type-one">propiedasdes<span>Destacadas</span></h2>
+                    <h2 class="title-type-one wow animate__backInUp">propiedasdes<br/><span>Destacadas</span></h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="container-item">
-                        <div class="container-image" style="background-image: url('assets/img/property_1.jpg');">
-                            <label>obra nueva</label>
-                            <label>vistas al mar</label>
-                            <label>ref: p-1204</label>
-                        </div>
-                        <div class="container-text">
-                            <div class="left">
-                                <h3>Piso</h3>
-                                <small>Obra nueva</small>
-                                <p>elche - huerto de trabalón</p>
-                                <label><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</label>
+                <div class="col-12 col-lg-6 px-4 mb-5 wow animate__fadeInLeftBig">
+                    <a href="" target="_self">
+                        <div class="container-item">
+                            <div class="container-image" style="background-image: url('assets/img/property_1.jpg');">
+                                <label class="badge bg-primary">obra nueva</label>
+                                <label class="badge bg-secondary">vistas al mar</label>
+                                <label class="badge bg-dark">ref: p-1204</label>
+                                <i class="bi bi-heart-fill"></i>
                             </div>
-                            <div class="right">
-                                <ul>
-                                    <li><b>200</b> m - <b>3</b> habitaciones</li>
-                                    <li><b>3</b> Baño - <b>piscina</b></li>
-                                </ul>
+                            <div class="container-text">
+                                <div class="left">
+                                    <h3>Piso</h3>
+                                    <small>Obra nueva</small>
+                                    <p>elche - huerto de trabalón</p>
+                                    <p class="text-price"><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</p>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><b>200</b> m - <b>3</b> habitaciones</li>
+                                        <li><b>3</b> Baño - <b>piscina</b></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="container-item">
-                        <div class="container-image" style="background-image: url('assets/img/property_2.jpg');">
-                            <label>obra nueva</label>
-                            <label>vistas al mar</label>
-                            <label>ref: p-1204</label>
-                        </div>
-                        <div class="container-text">
-                            <div class="left">
-                                <h3>Piso</h3>
-                                <small>Obra nueva</small>
-                                <p>elche - huerto de trabalón</p>
-                                <label><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</label>
+                <div class="col-12 col-lg-6 px-4 mb-5 wow animate__fadeInRightBig">
+                    <a href="" target="_self">
+                        <div class="container-item">
+                            <div class="container-image" style="background-image: url('assets/img/property_2.jpg');">
+                                <label class="badge bg-primary">obra nueva</label>
+                                <label class="badge bg-secondary">vistas al mar</label>
+                                <label class="badge bg-dark">ref: p-1204</label>
+                                <i class="bi bi-heart"></i>
                             </div>
-                            <div class="right">
-                                <ul>
-                                    <li><b>200</b> m - <b>3</b> habitaciones</li>
-                                    <li><b>3</b> Baño - <b>piscina</b></li>
-                                </ul>
+                            <div class="container-text">
+                                <div class="left">
+                                    <h3>Piso</h3>
+                                    <small>Obra nueva</small>
+                                    <p>elche - huerto de trabalón</p>
+                                    <p class="text-price"><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</p>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><b>200</b> m - <b>3</b> habitaciones</li>
+                                        <li><b>3</b> Baño - <b>piscina</b></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="container-item">
-                        <div class="container-image" style="background-image: url('assets/img/property_3.jpg');">
-                            <label>obra nueva</label>
-                            <label>vistas al mar</label>
-                            <label>ref: p-1204</label>
-                        </div>
-                        <div class="container-text">
-                            <div class="left">
-                                <h3>Piso</h3>
-                                <small>Obra nueva</small>
-                                <p>elche - huerto de trabalón</p>
-                                <label><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</label>
+                <div class="col-12 col-lg-6 px-4 mb-5 wow animate__fadeInLeftBig">
+                    <a href="" target="_self">
+                        <div class="container-item">
+                            <div class="container-image" style="background-image: url('assets/img/property_3.jpg');">
+                                <label class="badge bg-primary">obra nueva</label>
+                                <label class="badge bg-secondary">vistas al mar</label>
+                                <label class="badge bg-dark">ref: p-1204</label>
+                                <i class="bi bi-heart"></i>
                             </div>
-                            <div class="right">
-                                <ul>
-                                    <li><b>200</b> m - <b>3</b> habitaciones</li>
-                                    <li><b>3</b> Baño - <b>piscina</b></li>
-                                </ul>
+                            <div class="container-text">
+                                <div class="left">
+                                    <h3>Piso</h3>
+                                    <small>Obra nueva</small>
+                                    <p>elche - huerto de trabalón</p>
+                                    <p class="text-price"><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</p>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><b>200</b> m - <b>3</b> habitaciones</li>
+                                        <li><b>3</b> Baño - <b>piscina</b></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <div class="container-item">
-                        <div class="container-image" style="background-image: url('assets/img/property_4.jpg');">
-                            <label>obra nueva</label>
-                            <label>vistas al mar</label>
-                            <label>ref: p-1204</label>
-                        </div>
-                        <div class="container-text">
-                            <div class="left">
-                                <h3>Piso</h3>
-                                <small>Obra nueva</small>
-                                <p>elche - huerto de trabalón</p>
-                                <label><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</label>
+                <div class="col-12 col-lg-6 px-4 mb-5 wow animate__fadeInRightBig">
+                    <a href="" target="_self">
+                        <div class="container-item">
+                            <div class="container-image" style="background-image: url('assets/img/property_4.jpg');">
+                                <label class="badge bg-primary">obra nueva</label>
+                                <label class="badge bg-secondary">vistas al mar</label>
+                                <label class="badge bg-dark">ref: p-1204</label>
+                                <i class="bi bi-heart"></i>
                             </div>
-                            <div class="right">
-                                <ul>
-                                    <li><b>200</b> m - <b>3</b> habitaciones</li>
-                                    <li><b>3</b> Baño - <b>piscina</b></li>
-                                </ul>
+                            <div class="container-text">
+                                <div class="left">
+                                    <h3>Piso</h3>
+                                    <small>Obra nueva</small>
+                                    <p>elche - huerto de trabalón</p>
+                                    <p class="text-price"><span class="text-decoration-line-through">350.000&euro;</span> 275.000&euro;</p>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><b>200</b> m - <b>3</b> habitaciones</li>
+                                        <li><b>3</b> Baño - <b>piscina</b></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                    <a href="" target="_self">Ver todas las<br/>propiedades</a>
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center wow animate__fadeInUp">
+                    <a href="" target="_self" class="btn-link">Ver todas las<br/>propiedades</a>
                 </div>
             </div>
         </div>
@@ -315,17 +322,17 @@
     <section class="block-about-us">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-5">
-                    <img src="assets/img/property_1.jpg" class="img-fluid object-fit-cover w-100 h-100" alt="Image">
+                <div class="col-12 col-lg-5 ps-lg-0 pe-lg-5 mb-5 mb-lg-0 wow animate__fadeInLeftBig">
+                    <img src="assets/img/property_1.jpg" class="img-fluid object-fit-cover w-100" alt="Image">
                 </div>
-                <div class="col-12 col-lg-5">
-                    <img src="assets/img/icon_2.svg" alt="Image">
-                    <p>bienvenido a nuestra Inmobiliaria.<br/><span>inmovalley fue fundada en elche en el año 2005, dedicada a la intermediación Inmobiliaria, contando sus componentes con más de veinte años de experiencia en el sectro inmobiliario.</span></p>
+                <div class="col-12 col-lg-5 px-lg-5 py-4 py-lg-0 d-flex flex-column justify-content-start align-items-start wow animate__fadeInUp">
+                    <img src="assets/img/icon_2.svg" alt="Image" class="img-logo">
+                    <small>bienvenido a nuestra Inmobiliaria.<br/><b>inmovalley</b> fue fundada en elche en el año 2005, dedicada a la intermediación Inmobiliaria, contando sus componentes con más de veinte años de experiencia en el sectro inmobiliario.</small>
                     <p>Desde su apertura, con una primera oficina en la C/ filet de Fora en Elche (Alicante), la empresa se ha volcado en la gestón de <b>compraventas y arrendamientos de inmuebles en Elche y sus alrededores.</b> En estos años, la confianza de nuestros clientes así como la profesionalidad de nuestros asesores ha ido creciendo constantemente.</p>
-                    <a href="" target="_self" class="btn">Más sobre nosotros</a>
+                    <a href="" target="_self" class="btn btn-outline-primary">Más sobre nosotros</a>
                 </div>
-                <div class="col-12 col-lg-2">
-                    <img src="assets/img/property_2.jpg" class="img-fluid object-fit-cover w-100 h-100" alt="Image">
+                <div class="col-12 col-lg-2 pe-lg-0 ps-lg-5 mt-5 mt-lg-0 wow animate__fadeInRightBig">
+                    <img src="assets/img/property_2.jpg" class="img-fluid object-fit-cover w-100" alt="Image">
                 </div>
             </div>
         </div>
@@ -336,12 +343,13 @@
     <section class="block-last-news">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-4 d-flex flex-column justify-content-end align-items-start">
+                <div class="col-12 col-lg-4 d-flex flex-column justify-content-end align-items-center align-items-lg-start wow animate__backInUp">
                     <div class="container-main">
                         <h2 class="title-type-one">Últimas<br/><span>Noticias</span></h2>
+                        <a href="" target="_self" class="btn-link"><i class="bi bi-plus-lg"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 pe-lg-4 mb-5 mb-lg-0">
+                <div class="col-12 col-lg-4 pe-lg-4 mb-5 mb-lg-0 wow animate__fadeInRightBig">
                     <a href="" target="_self">
                         <div class="container-item" style="background-image: url('assets/img/mews_1.jpg');">
                             <label>20 jun</label>
@@ -349,7 +357,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-12 col-lg-4 ps-lg-4">
+                <div class="col-12 col-lg-4 ps-lg-4 wow animate__fadeInRightBig">
                     <a href="" target="_self">
                         <div class="container-item" style="background-image: url('assets/img/news_2.jpg');">
                             <label>20 jun</label>
@@ -370,11 +378,11 @@
     <section class="block-contact">
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center wow animate__backInUp">
                     <h2 class="title-type-one">contacta<br/><span>con</span><br/>nosotros</h2>
                 </div>
             </div>
-            <form action="" method="post">
+            <form action="" method="post" class="wow animate__fadeInUp">
                 <div class="row">
                     <div class="col-12">
                         <input type="text" class="form-control" placeholder="Tu nombre">

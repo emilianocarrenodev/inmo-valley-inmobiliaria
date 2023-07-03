@@ -1,10 +1,56 @@
 header {
 
     .offcanvas {
+        background-color: #181d23;
 
         // Breakpoints
         @include respond-to($phone) {
             width: 100% !important;
+        }
+
+        .offcanvas-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            
+            .btn-close {
+                margin-right: 15px;
+                opacity: 1;
+
+                .bi {
+                    line-height: 20px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: #FFF;
+                }
+            }
+        }
+
+        .offcanvas-body {
+
+            .navbar-nav {
+
+                .nav-item {
+
+                    .nav-link {
+                        padding: 5px 15px;
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: #FFF;
+
+                        &:hover {
+                            color: #99820e;
+                        }
+
+                        &.active {
+                            text-transform: uppercase;
+                            background-color: #99820e;
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
         }
     }
 

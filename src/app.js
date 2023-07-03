@@ -1,6 +1,8 @@
 import './scss/style.scss';
 import * as bootstrap from 'bootstrap';
 
+import WOW from 'wowjs';
+
 import Swiper, {Autoplay, Navigation, Pagination, EffectFade} from 'swiper';
 Swiper.use([Autoplay, Navigation, Pagination, EffectFade]);
 
@@ -27,3 +29,13 @@ const swiper = new Swiper('#slider-main', {
         clickable: true
     }
 });
+
+/*Script WOW*/
+new WOW.WOW({
+    boxClass:     'wow',
+    animateClass: 'animate__animated',
+    offset:       0,
+    mobile:       true,
+    live:         true,
+    scrollContainer: null
+}).init();

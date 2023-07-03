@@ -1,5 +1,5 @@
 .block-last-news {
-    padding: 100px 0px;
+    padding: 150px 0px;
     background-color: #eaeaea;
 
     // Breakpoints
@@ -20,9 +20,12 @@
     }
 
     .container-main {
-        margin-left: -15px;
-        margin-bottom: 15px;
-        background-color: red;
+        margin-left: -4rem;
+        margin-bottom: 4.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
         -o-transform: rotate(-90deg);
@@ -32,7 +35,8 @@
         // Breakpoints
         @include respond-to($phone) {
             margin-left: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 60px;
+            align-items: center;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
@@ -42,7 +46,8 @@
 
         @include respond-to($phone-tablet) {
             margin-left: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 60px;
+            align-items: center;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
@@ -52,7 +57,8 @@
 
         @include respond-to($tablet-medium) {
             margin-left: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 60px;
+            align-items: center;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
@@ -62,12 +68,123 @@
 
         @include respond-to($medium-large) {
             margin-left: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 60px;
+            align-items: center;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
             -ms-transform: rotate(0deg);
             transform: rotate(0deg);
+        }
+
+        h2 {
+            line-height: 7.5rem;
+            font-size: 7.5rem;
+            color: #000;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                line-height: 5rem;
+                font-size: 5rem;
+            }
+
+            @include respond-to($phone-tablet) {
+                line-height: 5rem;
+                font-size: 5rem;
+            }
+
+            @include respond-to($tablet-medium) {
+                line-height: 5rem;
+                font-size: 5rem;
+            }
+
+            @include respond-to($medium-large) {
+                line-height: 5rem;
+                font-size: 5rem;
+            }
+
+            span {
+                margin-top: -4rem;
+                float: left;
+                position: relative;
+                text-transform: initial;
+                font-family: 'Caveat', cursive;
+                line-height: 6rem;
+                font-weight: 500;
+                font-size: 6rem;
+                color: #99820e;
+
+                // Breakpoints
+                @include respond-to($phone) {
+                    margin-top: -3rem;
+                    font-size: 4rem;
+                }
+
+                @include respond-to($phone-tablet) {
+                    margin-top: -3rem;
+                    font-size: 4rem;
+                }
+
+                @include respond-to($tablet-medium) {
+                    margin-top: -3rem;
+                    font-size: 4rem;
+                }
+
+                @include respond-to($medium-large) {
+                    margin-top: -3rem;
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        .btn-link {
+            width: 120px;
+            height: 120px;
+            margin-top: 30px;
+            border: 1px solid #99820e;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                width: 60px;
+                height: 60px;
+                margin-top: 0px;
+            }
+
+            @include respond-to($phone-tablet) {
+                width: 60px;
+                height: 60px;
+                margin-top: 0px;
+            }
+
+            @include respond-to($tablet-medium) {
+                width: 60px;
+                height: 60px;
+                margin-top: 0px;
+            }
+
+            @include respond-to($medium-large) {
+                width: 60px;
+                height: 60px;
+                margin-top: 0px;
+            }
+
+            .bi {
+                line-height: 25px;
+                font-weight: 300;
+                font-size: 25px;
+                color: #000;
+            }
+
+            &:hover {
+                background-color: #99820e;
+            }
         }
     }
 
@@ -97,12 +214,12 @@
         }
 
         @include respond-to($tablet-medium) {
-            min-height: 350px;
+            min-height: 300px;
             padding: 15px;
         }
 
         @include respond-to($medium-large) {
-            min-height: 350px;
+            min-height: 300px;
             padding: 15px;
         }
 
@@ -114,7 +231,10 @@
             position: absolute;
             -webkit-transition: all 0.5s;
             transition: all 0.5s;
-            background-color: red;
+            background-color: rgba(153, 130, 14, 0.85);
+            background-repeat: no-repeat, no-repeat;
+            background-position: 15px bottom,  95% 95%;
+            background-image: url('../img/bg-item-news.jpg'), url('../img/arrow-right.svg');
             content: '';
             z-index: 0;
             opacity: 0;

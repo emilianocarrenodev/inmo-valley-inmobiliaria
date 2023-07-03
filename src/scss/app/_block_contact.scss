@@ -24,12 +24,57 @@
     }
 
     h2 {
-        margin-bottom: 30px;
+        margin-bottom: 70px;
         text-align: center;
-        color: #000;
+        line-height: 3rem;
+        color: #181d23;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 50px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 50px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 50px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 50px;
+        }
 
         span {
+            width: 100%;
+            margin-top: -1.5rem;
+            float: left;
+            position: relative;
+            text-align: center;
+            text-transform: initial;
+            font-family: 'Caveat', cursive;
+            line-height: 5rem;
+            font-weight: 400;
+            font-size: 5rem;
             color: #FFF;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                font-size: 3rem;
+            }
+
+            @include respond-to($phone-tablet) {
+                font-size: 3rem;
+            }
+
+            @include respond-to($tablet-medium) {
+                font-size: 3rem;
+            }
+
+            @include respond-to($medium-large) {
+                font-size: 3rem;
+            }
         }
     }
 

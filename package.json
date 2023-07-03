@@ -32,9 +32,11 @@
   "homepage": "https://github.com/emilianocarrenodev/inmo-valley-inmobiliaria/blob/main/README.md",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.10.5",
     "jquery": "^3.7.0",
-    "swiper": "^9.4.1"
+    "swiper": "^9.4.1",
+    "wowjs": "^1.1.3"
   }
 }

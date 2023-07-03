@@ -1,21 +1,21 @@
 .block-search {
-    padding: 120px 0px 60px 0px;
+    padding: 220px 0px 100px 0px;
 
     // Breakpoints
     @include respond-to($phone) {
-        padding: 60px 0px;
+        padding: 60px 0px 45px 0px;
     }
 
     @include respond-to($phone-tablet) {
-        padding: 60px 0px;
+        padding: 60px 0px 45px 0px;
     }
 
     @include respond-to($tablet-medium) {
-        padding: 60px 0px;
+        padding: 60px 0px 45px 0px;
     }
 
     @include respond-to($medium-large) {
-        padding: 60px 0px;
+        padding: 60px 0px 45px 0px;
     }
 
     .input-group {
@@ -45,11 +45,62 @@
             justify-content: flex-start;
         }
 
-        .form-select {
+        .form-select,
+        .form-control {
+            height: 52.6px;
             margin-bottom: 15px;
+            font-style: italic;
+            letter-spacing: 0;
+            line-height: 25px;
+            font-size: 15px;
+            color: #333333;
             -webkit-border-radius: 0px !important;
             -moz-border-radius: 0px !important;
             border-radius: 0px !important;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                width: 100%;
+            }
+
+            @include respond-to($phone-tablet) {
+                width: 100%;
+            }
+
+            @include respond-to($tablet-medium) {
+                width: 100%;
+            }
+
+            @include respond-to($medium-large) {
+                width: 100%;
+            }
+
+            &::-webkit-input-placeholder {
+                font-style: italic;
+                letter-spacing: 0;
+                line-height: 25px;
+                font-size: 15px;
+                color: #333333;
+            }
+        
+            &:-ms-input-placeholder {
+                font-style: italic;
+                letter-spacing: 0;
+                line-height: 25px;
+                font-size: 15px;
+                color: #333333;
+            }
+        
+            &::placeholder {
+                font-style: italic;
+                letter-spacing: 0;
+                line-height: 25px;
+                font-size: 15px;
+                color: #333333;
+            }
+        }
+
+        .btn {
 
             // Breakpoints
             @include respond-to($phone) {
@@ -72,20 +123,71 @@
         .btn-search {
             min-width: 200px;
             margin-bottom: 15px;
+            padding: 8px 15px;
             background-color: #feca00;
             color: #FFF;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                width: 35px;
+                height: 35px;
+                margin-right: 10px;
+                top: 0px;
+                left: 0px;
+                float: left;
+                position: relative;
+                background: transparent url('../img/search.svg') left center / contain no-repeat;
+                content: '';
+            }
         }
 
         .btn-filter {
             margin-bottom: 15px;
+            padding: 8px 15px;
             background-color: #333333;
             color: #FFF;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                width: 35px;
+                height: 35px;
+                margin-right: 10px;
+                top: 0px;
+                left: 0px;
+                float: left;
+                position: relative;
+                background: transparent url('../img/eraser.svg') left center / contain no-repeat;
+                content: '';
+            }
         }
 
         .btn-advanced {
             margin-bottom: 15px;
+            padding: 8px 15px;
             background-color: #98850d;
             color: #FFF;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                width: 35px;
+                height: 35px;
+                margin-right: 10px;
+                top: 0px;
+                left: 0px;
+                float: left;
+                position: relative;
+                background: transparent url('../img/advanced search.svg') left center / contain no-repeat;
+                content: '';
+            }
         }
     }
 }
